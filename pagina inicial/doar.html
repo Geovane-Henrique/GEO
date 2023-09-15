@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seja um agente de transformação na vida do próximo, em minutos, você pode ajudar dezenas de ONGS que cuidam de pessoas em situação de vulnerabilidade social.">
+    <title>Formulário Doação</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="stylesheet" type="text/css" href="cadastro2.css">
+    <script src="https://kit.fontawesome.com/5fe9d790a0.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="img/logo4.jpeg" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Doar</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="login.html">Logado</a></button>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <div class="input-group">
+                            <div class="input-box">
+                                <label for="orgname">Nome da ONG</label>
+                                <input id="orgname" type="text" name="orgname" placeholder="Digite o nome da ONG" required>
+                            </div>
+                        
+                            <div class="input-box">
+                                <label for="orgtype">Tipo da ONG</label>
+                                <input id="orgtype" type="text" name="orgtype" placeholder="Digite o tipo da ONG" required>
+                            </div>
+                        
+                            <div class="input-box">
+                                <label for="city">Cidade</label>
+                                <input id="city" type="text" name="city" placeholder="Digite sua cidade" required>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="amount">Valor da Doação</label>
+                                <input id="amount" type="text" name="amount" placeholder="Digite o valor da doação" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div class="input-box">
+                                <label for="bank-account">Conta Bancária da ONG</label>
+                                <input id="bank-account" type="text" name="bank-account" placeholder="Digite a conta bancária" required>
+                            </div>
+                        
+                            <div class="input-box">
+                                <label for="payment-method">Forma de Pagamento</label>
+                                <div class="payment-methods">
+                                    <div class="payment-method">
+                                        <input id="money" type="radio" name="payment-method" value="money">
+                                        <label for="money">Dinheiro</label>
+                                    </div>
+                                    <div class="payment-method">
+                                        <input id="pix" type="radio" name="payment-method" value="pix">
+                                        <label for="pix">PIX</label>
+                                    </div>
+                                    <div class="payment-method">
+                                        <input id="cards" type="radio" name="payment-method" value="cards">
+                                        <label for="cards">Cartões</label>
+                                    </div>
+                                    <div class="payment-method">
+                                        <input id="transfer" type="radio" name="payment-method" value="transfer">
+                                        <label for="transfer">Transferência Bancária</label>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="input-box">
+                                <label for="anonymous">Doação Anônima</label>
+                                <input id="anonymous" type="checkbox" name="anonymous">
+                            </div>
+                        
+
+                </div>
+
+                <div class="input-box">
+                    <label for="type">Tipo de ONG</label>
+                    <select id="type" name="type">
+                        <option value="environment">Meio Ambiente</option>
+                        <option value="education">Educação</option>
+                        <option value="health">Saúde</option>
+                        <option value="social">Crianças</option>
+                    </select>
+                </div>
+
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a> </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

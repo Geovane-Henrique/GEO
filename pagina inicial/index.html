@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seja um agente de transformação na vida do próximo, em minutos, você pode ajudar dezenas de ONGS que cuidam de pessoas em situação de vulnerabilidade social.">
+    <title>Alimenta Recife - Doe para quem precisa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/5fe9d790a0.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    </style>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho-superior">
+            <a href="index.html">
+          <img class="cabecalho-imagem" src="logo1.jpg">
+            </a>
+          <form class="cabecalho-pesquisa">
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Cidade da ONG">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Nome da ONG">
+            <label for="tipo">Tipo:</label>
+            <select id="tipo" name="tipo" required>
+                <option value="selecione" selected>Selecione uma opção</option>
+                <option value="ong1">ONGs Ambientais</option>
+                <option value="ong2">ONGs de Animais</option>
+                <option value="ong3">ONGs de Apoio a Mulheres</option>
+                <option value="ong4">ONGs de Arte e Cultura</option>
+                <option value="ong5">ONGs de Ajuda Humanitária</option>
+                <option value="ong6">ONGs de Crianças</option>
+                <option value="ong7">ONGs de Educação</option>
+                <option value="ong8">ONGs de Direitos Humanos</option>
+                <option value="ong9">ONGs de Idosos </option>
+                <option value="ong10">ONG de Moradia</option>
+                <option value="ong11">ONGs de Saúde</option>
+            </select>
+      
+            <button  type="submit" class="lupa-button"><i class="fas fa-search lupa-icon" style="color: #fff2e7;"></i></i></button>
+
+        </form>
+        </div>
+        <nav class="cabecalho-menu">
+          <a class="cabecalho-menu-item" href="index.html">Home</a>
+          <a class="cabecalho-menu-item" href="cadastro.html">Cadastro</a>
+          <a class="cabecalho-menu-item" href="jornal.html">Jornal</a>
+          <a class="cabecalho-menu-item" href="contato.html">Contato</a>
+          <a class="cabecalho-menu-item" href="index.html#sobre">Sobre</a>
+        </nav> 
+    </header>
+
+    <main class="conteudo">
+        <section class="conteudo-principal">
+            <div class="conteudo-principal-escrito">
+                <h1 class="conteudo-principal-escrito-titulo">Alimenta Recife</h1>
+                <h2 class="conteudo-principal-escrito-subtitulo">Faça parte da mudança, apoie uma ONG</h2>
+            </div>
+
+        <div class="conteudo-principal-imagens">
+            <div class="conteudo-principal-imagem">
+                <img src="ajude-com-doacoes.jpg" alt="Imagem 1">
+                <figcaption>Ajude uma organização com doações</figcaption>
+                <p>Veja aqui a lista de organizações sociais.</p>
+                <button class="botao-imagem">Ver lista</button>
+            </div>
+
+            <div class="conteudo-principal-imagem">
+                <img src="como-trabalhar-em-ongs-brasil.jpg" alt="Imagem 2">
+                <figcaption>Faça trabalho voluntário nas ONGs</figcaption>
+                <p>Veja aqui a lista de organizações sociais.</p>
+                <button class="botao-imagem">Ver lista</button>
+            </div>
+        
+            <div class="conteudo-principal-imagem">
+                <img src="ajude-divulgar-ong.jpg" alt="Imagem 3">
+                <figcaption>Ajude a divulgar uma organização</figcaption>
+                <p>Veja aqui a lista de organizações sociais de seu município, e ajude a divulgar.</p>
+                <button class="botao-imagem">Ver lista</button>
+            </div>
+        
+            <div class="conteudo-principal-imagem">
+                <img src="calendario-de-causas-2.jpg" alt="Imagem 4">
+                <figcaption>Escolha a data da sua causa!</figcaption>
+                <p>Cadastramos diversas datas que divulgam e apoiam causas.</p>
+                <button class="botao-imagem">Ver datas</button>
+            </div>
+        
+            <div class="conteudo-principal-imagem">
+                <img src="sugira-uma-organizacao.jpg" alt="Imagem 5">
+                <figcaption>Sugira o cadastro de uma ONG</figcaption>
+                <p>Ajude a completar nosso cadastro das organizações sociais de seu município.</p>
+                <button class="botao-imagem">Sugira uma ONG</button>
+            </div>
+        
+            <div class="conteudo-principal-imagem">
+                <img src="se-envolva-em-causa.jpg" alt="Imagem 6">
+                <figcaption>Se envolva em uma causa do seu interesse</figcaption>
+                <p>Ajude organizações que trabalham em prol de causas em que você acredita.</p>
+                <button class="botao-imagem" id="ver-lista">Ver lista</button>
+            </div>
+        </div>
+        
+        </section>
+                
+        <section class="conteudo-secundario" id="sobre">
+            <h3 class="conteudo-secundario-titulo">Sobre nós</h3>
+            <p class="conteudo-secundario-paragrafo"> O objetivo principal do nosso website é simplificar e agilizar o processo de doação para ONGs localizadas na região do Recife e Pernambuco. Nosso compromisso é proporcionar uma experiência de doação descomplicada e eficiente, conectando doadores generosos às ONGs que atuam na região.</p>
+            <p class="conteudo-secundario-paragrafo"> Com um design intuitivo e funcional, o nosso site permite que os usuários encontrem facilmente as informações relevantes sobre as ONGs participantes, seus projetos e necessidades atuais. Nossa plataforma foi cuidadosamente desenvolvida para oferecer uma interface amigável, proporcionando uma experiência de navegação agradável e acessível para pessoas de todas as idades e níveis de habilidade tecnológica.</p>
+            <p class="conteudo-secundario-paragrafo"> Além disso, valorizamos a transparência e a segurança em todas as etapas do processo de doação. Nosso sistema garante a proteção dos dados pessoais e financeiros dos doadores, utilizando tecnologias de criptografia de ponta para garantir a confidencialidade das informações. Dessa forma, os doadores podem ter a tranquilidade de que suas contribuições serão direcionadas corretamente e utilizadas de maneira ética pelas ONGs parceiras.</p>
+        </section>
+    </main>
+    
+    <footer class="rodape">
+        <div class="footer_content">
+            <div id="footer_icons">
+             <div class="logo">
+                <a class="footer-link" href="#" target="_blank">
+                 <i class="fab fa-instagram"></i>
+                </a>
+                <a class="footer-link" href="#" target="_blank">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a class="footer-link" href="#" target="_blank">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <a class="footer-link" href="#" target="_blank">
+                  <i class="fab fa-blogger"></i>
+                </a>
+              </div>
+              <ul class="footer-list">
+                <li><a href="#" class="textorodape">Ongs por Cidade</a></li>
+                <li><a href="#" class="textorodape">Ongs por Tipo</a></li>
+                <li><a href="#" class="textorodape">ONGs para Trabalho Voluntário</a></li>
+                <li><a href="#" class="textorodape">ONGs para Voluntariado Empresarial</a></li>
+                <li><a href="#" class="textorodape">Maiores ONGs de Pernambuco</a></li>
+                <li><a href="#" class="textorodape">Como Criar uma ONG</a></li>
+              </ul>
+              <ul class="footer-list">
+                <li><a href="#" class="textorodape">Quem Somos</a></li>
+                <li><a href="#" class="textorodape">Fale Conosco</a></li>
+                <li><a href="#" class="textorodape">Política de Privacidade</a></li>
+                <li><a href="#" class="textorodape">Termos de Uso</a></li>
+                <li><a href="#" class="textorodape">Busca Avançada</a></li>
+              </ul>
+              <div class="aviso">
+                <img src="logo2.svg" alt="Logo" width="75" height="53">
+                <p><span class="textorodape" style="font-size: 20px;"><i>Todas as informações contidas no site estão sendo mostradas para fins de aprendizado. O site é apenas um projeto escolar.</i></span></p>
+              </div>
+            </div>
+    </footer>
+    
+</div>
+    
+</body>
